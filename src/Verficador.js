@@ -3,12 +3,27 @@ class Verificador{
         cadena = this.cadena;
     }
 
-    VerificarCocheteEntrada(cadena){
+    get_CocheteEntrada(){     
         return "[";
     }
 
-    VerificarCorcheteCierre(cadena){
+    get_CorcheteCierre(){
         return "]"
+    }
+
+    get_Corchetes(){
+        return "[]";
+    }
+
+    VerficarCorchetes(cadena){
+        if(cadena == this.get_Corchetes())
+        {
+            return cadena;
+        }
+        else
+        {
+            return " ";
+        }
     }
 }
 
