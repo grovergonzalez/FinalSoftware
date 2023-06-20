@@ -25,6 +25,16 @@ class Verificador{
             return " ";
         }
     }
+
+    VerificarCorrecto(cadena){
+        if(this.VerficarCorchetes(cadena)){
+            return "Correcto";
+        }
+        else
+        {
+            return "Incorrecto";
+        }
+    }
 }
 
 export default Verificador;
