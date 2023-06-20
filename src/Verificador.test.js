@@ -17,6 +17,7 @@ describe("Verificar Corchetes de apertura y cierre", () => {
   
 const CadenaCorrecta = "[[]]";
 const CadenaIncorrecta = "[[]";
+const cadenaCorrectaConCaracteres = "[[a]b]";
 
 describe("Verificar los corchetes devolviendo Correcto o Incorrecto", () => {
     it("deberia verficar si existe un corchete de apertura y cierre correspondientes devolviendo la palabra Correcto", () => {
@@ -24,5 +25,8 @@ describe("Verificar los corchetes devolviendo Correcto o Incorrecto", () => {
     });
     it("deberia verficar si existe un corchete de apertura y cierre correspondientes devolviendo la palabra Incorrecto", () => {
         expect(verificador.VerificarIncorrecto(CadenaIncorrecta)).toEqual("Incorrecto");
+    });
+    it("deberia verficar si existe un corchete de apertura y cierre correspondientes devolviendo la palabra Correcto con caracteres", () => {
+        expect(verificador.VerificarCorrecto(cadenaCorrectaConCaracteres)).toEqual("Correcto");
     });
 });
