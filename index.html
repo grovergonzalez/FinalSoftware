@@ -2,10 +2,24 @@
   <body>
     <h1>Realizar Publicacion</h1>
     <form id="Publicacion-form">
-      <label>Que estas Pensando?:</label>
-      <input type="text" id="texto-publicacion" />
-      <input type="submit" value="publicar" id="publicar-button" />
+      <div>
+        <label>Que estas Pensando?:</label>
+        <input type="text" id="texto-publicacion" />
+        <input type="submit" value="publicar" id="publicar-button" />
+      </div>
+      <div>
+        <input type="submit" value="Amigos" id="publicar-button">
+      </div>
     </form>
+    <form id="Publicacion-Amigos-form">
+      <div>
+        <label>Aviso: Esta Publicacion solo la veran tus amigos</label>
+        <label>Que estas Pensando?:</label>
+        <input type="text" id="texto-publicacion-amigos" />
+        <input type="submit" value="Amigos" id="publicar-amigos-button">
+      </div>
+    </form>
+    <h1>Publicaciones</h1>
     <div id="resultado-div"></div>
 
     <script type="module" src="./src/presenter.js"></script>
