@@ -30,8 +30,10 @@ class Verificador{
         if(this.VerficarCorchetes(cadena)){
             return "Correcto";
         }
-        else
-        {
+    }
+
+    VerificarIncorrecto(cadena){
+        if(cadena != this.get_CocheteEntrada() && cadena != this.get_CorcheteCierre){
             return "Incorrecto";
         }
     }
