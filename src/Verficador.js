@@ -6,6 +6,10 @@ class Verificador{
     VerificarCocheteEntrada(cadena){
         return "[";
     }
+
+    VerificarCorcheteCierre(cadena){
+        return "]"
+    }
 }
 
 export default Verificador;
